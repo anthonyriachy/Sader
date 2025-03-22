@@ -254,36 +254,6 @@ body {
 	right: -65px;
 	left: auto;
 }
-.accordion-box {
-	margin-left: 0px;
-	padding-left: 40px;
-	padding-right: 0px;
-}
-.accordion-box .accordion {
-	padding-right: 50px;
-	padding-left: 0px;
-}
-.accordion-box.style-two .accordion {
-	padding-right: 20px;
-	padding-left: 0px;
-}
-.accordion-box.style-two .accordion .accord-btn {
-	padding: 18px 35px 18px 15px;
-}
-.accordion-box .accordion .accord-btn:before {
-	right: -50px;
-	left: auto;
-}
-.accordion-box.style-two .accordion .accord-btn:before {
-	right: 0px;
-	left: auto;
-}
-.accordion-box .accordion .accord-content {
-	padding: 10px 0px 0px 15px;
-}
-.default-masonry .masonry-item {
-	float: right;
-}
 .testimonials-section:before {
 	right: 0px;
 	left: auto;
