@@ -41,7 +41,7 @@
         right: 0px;
     }
     .navbar-header {
-        text-align: left;
+        text-align: right;
         left: 0px;
     }
     .navbar-header .navbar-toggle {
@@ -80,7 +80,7 @@
       @media screen and (max-width:991px) {
     
         table td {
-          text-align: left;
+          text-align: right;
         }
     
     
