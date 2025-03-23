@@ -3,38 +3,18 @@
         padding-right: 15px;
         padding-left: 15px;
     }
-    .two-col-fluid .content-column .inner-box {
-        padding-right: 90px;
-    }
-    .default-section .column .inner-box {
-        padding-left: 0px !important;
-    }
+   
     }
     @media only screen and (max-width:1023px) {
     .navigation > li > a {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .header-style-two .navigation > li ul > li > ul {
-        right: auto !important;
-        left: 100% !important;
-    }
-  
-    .request-quote-section .image-column, .request-quote-section .form-column {
-        padding-left: 15px !important;
-    }
-    .video-list-view .video-item {
-        float: right;
-    }
+    
     }
     @media only screen and (max-width:767px) {
     .nav-outer {
         padding-left: 0px;
-    }
-    .nav-outer {
-        padding-right: 0px;
-        border-right: 15px solid transparent;
-        border-left: 15px solid transparent;
     }
      .get-btn {
         left: auto;
@@ -44,8 +24,8 @@
         text-align: right;
         left: 0px;
     }
-    .navbar-header .navbar-toggle {
-        margin: 0px 0px 0px 15px;
+    .navbar-header > button{
+        display:block !important;
     }
     .navigation li.dropdown > a:after, .navigation > li.dropdown > a:before, .navigation > li > ul > li > a::before, .navigation > li > ul > li > ul > li > a::before {
         left: 15px;
@@ -68,12 +48,6 @@
 
     .intro-style-one .content-column .inner {
         padding-left: 0px;
-    }
-    .accordion-box {
-        padding-left: 0px;
-    }
-    .default-section .column .padd-right-30, .default-section .column .padd-right-20 {
-        padding-left: 0px !important;
     }
     }
     

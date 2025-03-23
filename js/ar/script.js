@@ -1,13 +1,6 @@
 (function ($) {
 
-    "use strict";
-
-
-    $(".tree").treemenu({ delay: 300 }).openActive();
     
-    
-
-
     //Tabs / Jquery Tabs
     if ($('.tabs-box').length) {
 
@@ -34,56 +27,7 @@
         });
 
     }
-
-
-    //LightBox / Fancybox
-    if ($('.lightbox-image').length) {
-        $('.lightbox-image').fancybox({
-            openEffect: 'elastic',
-            closeEffect: 'elastic',
-            helpers: {
-                media: {}
-            }
-        });
-    }
-
-    if ($('.fancybox-media').length) {
-        $(".fancybox-media").fancybox({
-            maxWidth: 800,
-            maxHeight: 600,
-            fitToView: false,
-            width: '70%',
-            height: '70%',
-            autoSize: false,
-            openEffect: 'elastic',
-            closeEffect: 'elastic'
-        });
-    }
-    //Gallery With Filters List
-    if ($('.filter-list').length) {
-        $('.filter-list').mixItUp({});
-    }
-
-
-    //Contact Form Validation
-    if ($('#contact-form').length) {
-        $('#contact-form').validate({
-            rules: {
-                username: {
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                message: {
-                    required: true
-                }
-            }
-        });
-    }
-
-
+  
     // Scroll to a Specific Div
     if ($('.scroll-to-target').length) {
         $(".scroll-to-target").on('click', function () {
@@ -95,15 +39,19 @@
 
         });
     }
-
-
-
-
-
-    
-
-
 })(window.jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+    let header = document.querySelector(".bounce-in-header");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            header.classList.add("visible"); // Show header when scrolling down
+        } else {
+            header.classList.remove("visible"); // Hide when back to top
+        }
+    });
+});
 
 $(document).ready(function () {
     "use strict";

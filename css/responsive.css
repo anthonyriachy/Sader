@@ -2,139 +2,24 @@
 
 @media only screen and (max-width: 320px)
 {
-   
-
-     .social-links-one
-    {
-        top: -15px;
-    }
-
     .main-menu .navigation > li > a
     {
         padding-left: 15px;
         padding-right: 15px;
-    }
-
-    .two-col-fluid .content-column .inner-box
-    {
-        padding-left: 90px;
-        max-width: none;
-    }
-
-    .default-section .default-masonry .masonry-item
-    {
-        width: 50%;
-    }
-
-    .boxed-icon-column
-    {
-        min-height: 150px;
-    }
-
-    .video-list-view .video-item .text
-    {
-        padding-top: 7px;
-    }
-
-    .project-single .default-masonry .masonry-item
-    {
-        width: 50%;
-    }
-
-    .default-section .column .inner-box
-    {
-        padding-right: 0px !important;
-    }
+    } 
 }
 
 
 
 @media only screen and (max-width: 1023px)
 {
-    .logo-outer
-    {
-        float: none!important;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
+     
 
     .main-menu .navigation > li > a
     {
         padding-left: 15px;
         padding-right: 15px;
     }
-
-    .header-style-two .main-menu .navigation > li ul > li > ul
-    {
-        left: auto !important;
-        right: 100% !important;
-    }
-
-  
-   
-
-    .bounce-in-header
-    {
-        display: none;
-    }
-
-    .two-col-fluid .content-column,
-    .two-col-fluid .form-column
-    {
-        width: 100%;
-        background: #f6f6f6;
-    }
-
-        .two-col-fluid .form-column .inner-box
-        {
-            max-width: none;
-        }
-
-    .request-quote-section .image-column,
-    .request-quote-section .form-column
-    {
-        padding-right: 15px !important;
-        display: none;
-    }
-
-        .request-quote-section .image-column img
-        {
-            max-width: 100%;
-            display: block;
-        }
-
-    .parallax-section h2
-    {
-        font-size: 32px;
-    }
-
-    .video-list-view .video-item
-    {
-        width: 50%;
-        float: left;
-        padding: 0px 10px;
-    }
-
-        .video-list-view .video-item .inner-box
-        {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 0px;
-            text-align: center;
-        }
-
-            .video-list-view .video-item .inner-box .image
-            {
-                position: relative;
-                width: 100%;
-                height: auto;
-            }
-
-        .video-list-view .video-item .content
-        {
-            padding: 10px 20px 20px;
-        }
 }
 
 @media only screen and (max-width: 767px)
@@ -142,14 +27,7 @@
 
      .nav-outer
     {
-        padding-right: 0px;
-    }
-
-    .header-style-three .nav-outer
-    {
-        padding-left: 0px;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
+         padding-right: 0px;
     }
 
      .get-btn
@@ -165,39 +43,7 @@
         color: #fff;
     }
 
-     .header-top .top-right,
-     .header-top .top-left
-    {
-        width: 100%;
-        text-align: center;
-    }
-
-         .header-top .top-right ul,
-         .header-top .top-left ul
-        {
-            text-align: center;
-        }
-
-             .header-top .top-right ul li,
-             .header-top .top-left ul li
-            {
-                display: inline-block;
-                float: none;
-            }
-
- .logo-outer
-    {
-        display: block;
-        width: 100%;
-        background: #fff;
-    }
-
-     .right-menu
-    {
-        width: 100%;
-        margin-top: -75px;
-    }
-
+      
      .main-menu
     {
         padding-top: 0px;
@@ -221,18 +67,7 @@
         border-radius: 3px;
     }
 
-        .main-menu .collapse.in,
-        .main-menu .collapsing
-        {
-            padding: 0px;
-            border: 1px solid #900C51;
-            margin: 0px 0px 15px;
-            -ms-border-radius: 3px;
-            -moz-border-radius: 3px;
-            -webkit-border-radius: 3px;
-            -o-border-radius: 3px;
-            border-radius: 3px;
-        }
+         
 
 
     .main-menu .navbar-header
@@ -247,21 +82,7 @@
         z-index: 12;
     }
 
-        .main-menu .navbar-header .navbar-toggle
-        {
-            display: inline-block;
-            z-index: 7;
-            border: 1px solid #ffffff;
-            float: none;
-            margin: 0px 15px 0px 0px;
-            border-radius: 0px;
-            background: #616161;
-        }
-
-            .main-menu .navbar-header .navbar-toggle .icon-bar
-            {
-                background: #ffffff;
-            }
+        
 
     .main-menu .navbar-collapse > .navigation
     {
@@ -346,7 +167,7 @@
                 visibility: visible !important;
             }
 
-    .main-menu .navigation > li:hover::before, .main-menu .navigation > li.current::before, .main-menu .navigation > li.current-menu-item::before
+    .main-menu .navigation > li:hover::before, .main-menu .navigation > li.current::before
     {
         background: #888;
         transform: skew(0deg);
@@ -377,9 +198,8 @@
     .main-menu .navbar-collapse > .navigation > li:hover > a,
     .main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
     .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
-    .main-menu .navbar-collapse > .navigation > li.current > a,
-    .main-menu .navbar-collapse > .navigation > li.current-menu-item > a
-    {
+    .main-menu .navbar-collapse > .navigation > li.current > a
+     {
         color: #ffffff !important;
     }
 
@@ -394,10 +214,7 @@
         display: none !important;
     }
 
-     .social-links-one
-    {
-        top: 0px;
-    }
+  
 
 
      .get-btn::before
@@ -414,77 +231,14 @@
     {
         padding: 14px 0px;
     }
-
-    .boxed-icon-column
-    {
-        min-height: 0px;
-    }
-
-    .parallax-section h2,
-    .logos-area .column h2
-    {
-        font-size: 24px;
-    }
-
-    .other-info h3,
-    .parallax-style-two h2
-    {
-        font-size: 20px !important;
-    }
-
-    .video-list-view .video-item
-    {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .error-section .bigger-text,
-    .error-section .extra-big
-    {
-        font-size: 36px;
-        line-height: 44px;
-        margin-bottom: 15px;
-    }
-
-    .error-section .text-lower strong
-    {
-        display: block;
-    }
+ 
+     
 }
 
 @media only screen and (max-width: 599px)
 {
 
- 
-     .social-links-one
-    {
-        top: 0px;
-    }
- 
-
-     .info-box .icon-box
-    {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-    }
-
-     .header-top .top-left,
-     .header-top .top-right
-    {
-        float: none !important;
-        text-align: center;
-    }
-
-
-
-
-
-    .default-title h2,
-    .services-style-one, .column h2
-    {
-        font-size: 20px;
-    }
+  
 
   
 
@@ -503,12 +257,7 @@
 
 @media only screen and (max-width: 499px)
 {
-     .upper-column.info-box
-    {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-    }
+      
 
      .get-btn
     {
@@ -520,32 +269,7 @@
         padding-right: 0px;
     }
 
-    .accordion-box
-    {
-        padding-right: 0px;
-    }
-
-    .default-section .column .padd-right-30,
-    .default-section .column .padd-right-20
-    {
-        padding-right: 0px !important;
-    }
-
-    .project-column .lower-content h3
-    {
-        font-size: 15px;
-    }
-
-    .project-single .default-masonry .masonry-item
-    {
-        width: 100%;
-    }
-
-    .other-info .columns-container
-    {
-        padding: 0px;
-        border: none;
-    }
+    
 }
 
 @media screen and (max-width:991px)
