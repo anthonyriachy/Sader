@@ -4,39 +4,8 @@
 
 
     $(".tree").treemenu({ delay: 300 }).openActive();
-   
-    //Update header style + Scroll to Top
-    function headerStyle() {
-        if ($('.main-header').length) {
-            var mainHeader = $('.main-header').height();
-            var windowpos = $(window).scrollTop();
-            if (windowpos >= mainHeader) {
-                $('.bounce-in-header').addClass('now-visible');
-                $('.scroll-to-top').fadeIn(300);
-            } else {
-                $('.bounce-in-header').removeClass('now-visible');
-                $('.scroll-to-top').fadeOut(300);
-            }
-        }
-    }
-
-   
-    headerStyle();
-    //Submenu Dropdown Toggle
-    if ($('.main-header li.dropdown ul').length) {
-        $('.main-header li.dropdown').append('<div class="dropdown-btn"></div>');
-
-        //Dropdown Button
-        $('.main-header li.dropdown .dropdown-btn').on('click', function () {
-            $(this).prev('ul').slideToggle(500);
-        });
-
-
-        //Disable dropdown parent link
-        $('.navigation li.dropdown > a').on('click', function (e) {
-            e.preventDefault();
-        });
-    }
+    
+    
 
 
     //Tabs / Jquery Tabs
@@ -131,18 +100,7 @@
 
 
 
-    /* ==========================================================================
-       When document is loaded, do
-       ========================================================================== */
-
-    $(window).on('load', function () {
-
-        if ($('.preloader').length) {
-            $('.preloader').delay(200).fadeOut(500);
-        }
-
-    });
-
+    
 
 
 })(window.jQuery);
