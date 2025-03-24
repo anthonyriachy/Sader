@@ -11,6 +11,7 @@ body {
     outline: none;
 }
 
+
 .bounce-in-header {
     position: fixed;
     top: -100px;
@@ -312,9 +313,7 @@ li {
     z-index: 5;
 }
 
-.navigation>li>ul>li.dropdown:hover>a:after {
-    color: #ffffff;
-}
+ 
 
 .navigation>li>ul>li>ul {
     position: absolute;
@@ -376,18 +375,25 @@ li {
 }
 
 .navbar-collapse>ul li.dropdown .dropdown-btn {
+    color:white;
     position: absolute;
     right: 10px;
     top: 6px;
     width: 34px;
     height: 30px;
     border: 1px solid #ffffff;
-    background: url(../../images/icons/submenu-icon.png) center center no-repeat;
-    background-size: 20px;
     cursor: pointer;
     z-index: 5;
     display: none;
+    
+    
 }
+.icon-center{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 
 .get-btn {
     width: auto;
@@ -513,7 +519,11 @@ li {
     margin-bottom: 10px;
 }
 
-.form-group input[type="text"]{
+.m-top-10{
+    margin-top: 10px;
+}
+
+.form-group input[type="text"], .form-group select {
     position: relative;
     line-height: 24px;
     padding: 10px 10px 10px 10px;
