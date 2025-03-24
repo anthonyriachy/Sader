@@ -25,6 +25,9 @@
 @media only screen and (max-width: 767px)
 {
 
+    .bounce-in-header {
+        display: none;
+    }
      .nav-outer
     {
          padding-right: 0px;

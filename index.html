@@ -27,6 +27,7 @@
     <link href="./css/style-rtl.css" rel="Stylesheet" type="text/css" media="all" />
     <link href="./css/responsive.css" rel="Stylesheet" type="text/css" media="all" />
     <link href="./css/responsive-rtl.css" rel="Stylesheet" type="text/css" media="all" />
+    <link href="./css/selectize.css" rel="Stylesheet" type="text/css" media="all" />
 
 
     <meta name="description" content="" />
@@ -451,7 +452,7 @@
                                                     </select>
                                                 </div>
                                                 <div
-                                                    class="form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
+                                                    class="d-flex gap-2 justify-content-end form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
                                                     <input class="theme-btn btn-style-four" type="button" value="بحث"
                                                         onclick="validate();" id="btnsearch_local">
                                                     <input class="theme-btn btn-style-three" type="button"
@@ -468,27 +469,20 @@
                                             <form>
                                                 <div class="row clearfix">
                                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                        <input name="ctl00$ContentPlaceHolder1$searchhome$TextBox1"
-                                                            type="text" id="ContentPlaceHolder1_searchhome_TextBox1"
+                                                        <input 
+                                                            type="text"
                                                             class="form-control" placeholder="كلمة / جزء من العنوان">
                                                     </div>
+
                                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                        <select class="select-to selectized" name="allwords"
-                                                            multiple="multiple" placeholder="اختر" id="drpOption"
-                                                            tabindex="-1" style="display: none;"></select>
-                                                        <div class="selectize-control select-to multi rtl">
-                                                            <div class="selectize-input items not-full has-options">
-                                                                <input type="text" autocomplete="off" tabindex=""
-                                                                    placeholder="اختر" style="width: 27px;">
-                                                            </div>
-                                                            <div class="selectize-dropdown select-to multi"
-                                                                style="display: none; width: 100px; top: 51px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
+                                                        <input 
+                                                            type="text"
+                                                            class="form-control" placeholder="اختر>
                                                     </div>
+
+                                                   
                                                     <div
-                                                        class="form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
+                                                        class="d-flex  justify-content-end form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
                                                         <input class="theme-btn btn-style-four" type="button"
                                                             value="بحث" onclick="GoToPage();">
 
