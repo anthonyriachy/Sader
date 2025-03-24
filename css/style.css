@@ -11,6 +11,12 @@ body {
     outline: none;
 }
 
+.navbar-collapse {
+    max-height: none !important;
+    scrollbar-width: none; /* For Firefox */
+}
+
+
 
 .bounce-in-header {
     position: fixed;

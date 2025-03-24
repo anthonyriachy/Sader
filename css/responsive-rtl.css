@@ -13,6 +13,10 @@
     
     }
     @media only screen and (max-width:767px) {
+        .max-h-300{
+            max-height: 300px!important;
+            overflow-y: scroll;
+        }
     .nav-outer {
         padding-left: 0px;
     }
@@ -21,7 +25,9 @@
         right: 0px;
     }
     .navbar-header {
-        text-align: right;
+        text-align: left;
+        display: flex;
+        justify-content: end;
         left: 0px;
     }
     .navbar-header > button{
