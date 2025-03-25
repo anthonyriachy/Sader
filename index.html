@@ -15,6 +15,7 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,274 +34,306 @@
 </head>
 
 <body>
-    
-        <div class="auto-container">
-            <div class="nav-outer">
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <button class="navbar-toggler bg-grey d-none" type="button" data-bs-toggle="collapse"
-                            data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars fa-2x"></i>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse show max-h-300">
-                    
-                    
-                        <div class="navbar-collapse collapse d-flex justify-content-between">
-                            <ul class="navigation d-flex flex-wrap w-100">
-                                <li class="current">
-                                    <a href="" style="font-size: 23px" title="الصفحة الرئيسية">
-                                        <i class="fa fa-home"></i>
+
+    <div class="auto-container">
+        <div class="nav-outer">
+            <!-- Main Menu -->
+            <nav class="main-menu">
+                <div class="navbar-header">
+                    <button class="navbar-toggler bg-grey d-md-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse show max-h-300" id="navbarContent">
+                    <ul class="navigation d-flex flex-wrap w-100">
+                        <li class="current">
+                            <a href="" style="font-size: 23px" title="الصفحة الرئيسية">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="بحث">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="المرئيات">
+                                <i class="fa fa-video-camera"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="التشريعات" class="  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>
+                                    التشريعات
+                                </p>
+                                <i class="fas fa-bars fa-2x ml-auto"></i>
+
+                            </a>
+                            
+                            <ul class="dropdown-menu  "
+                                aria-labelledby="dropdownMenuLink ">
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض التشريعات حسب تاريخ الاصدار">
+                                        <i class="fa fa-history">&nbsp;</i> عرض التشريعات حسب تاريخ الاصدار
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="" title="بحث">
-                                        <i class="fa fa-search"></i>
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض التشريعات حسب المواضيع ">
+                                        <i class="fa fa-th-list">&nbsp;</i> عرض التشريعات حسب المواضيع
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="" title="المرئيات">
-                                        <i class="fa fa-video-camera"></i>
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض التشريعات حسب الجهات المعنية">
+                                        <i class="fa fa-arrows">&nbsp;</i> عرض التشريعات حسب الجهات المعنية
                                     </a>
                                 </li>
-                                    <li class="dropdown">
-                                        <a type="button" href="" title="التشريعات" class="dropdown-toggle"
-                                            data-bs-toggle="dropdown">التشريعات</a>
-                                        <ul class="dropdown ">
-                                            <li>
-                                                <a href="" title="عرض التشريعات حسب تاريخ الاصدار">
-                                                    <i class="fa fa-history">&nbsp;</i> عرض التشريعات حسب تاريخ الاصدار
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="" title="عرض التشريعات حسب المواضيع ">
-                                                    <i class="fa fa-th-list">&nbsp;</i> عرض التشريعات حسب المواضيع
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="" title="عرض التشريعات حسب الجهات المعنية">
-                                                    <i class="fa fa-arrows">&nbsp;</i> عرض التشريعات حسب الجهات المعنية
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <i class="fa fa-ban" title="التشريعات الملغاة">&nbsp;</i> التشريعات
-                                                    الملغاة
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="" title="البحث في التشريعات">البحث في التشريعات</a>
-                                            </li>
-                                        </ul>
-                                        <div class="dropdown-btn"></div>
-                                    </li>
-                                <li class="dropdown">
-                                    <a href="" title="الاتفاقيات">الاتفاقيات</a>
-                                    <ul>
-                                        <li>
-                                            <a href="" title="عرض الاتفاقيات حسب تاريخ الصدور">
-                                                <i class="fa fa-history">&nbsp;</i> عرض الاتفاقيات حسب تاريخ الصدور
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" title="عرض الاتفاقيات حسب المواضيع">
-                                                <i class="fa fa-th-list">&nbsp;</i> عرض الاتفاقيات حسب المواضيع
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" title="عرض الاتفاقيات حسب المنظمات">
-                                                <i class="fa fa-th">&nbsp;</i> عرض الاتفاقيات حسب المنظمات
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" title="عرض الاتفاقيات حسب الدول">
-                                                <i class="fa fa-globe">&nbsp;</i> عرض الاتفاقيات حسب الدول
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" title="البحث في الاتفاقيات">البحث في الاتفاقيات</a>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-btn icon-center"><i class="fas fa-bars fa-2x"></i></div>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" title="الأحكام">الأحكام</a>
-                                    <ul role="menu" class="dropdown-large row">
-                                        <li class="d-flex gap-3">
-                                            <div class="flex-grow-1 w-50">
-                                                <h3>الأحكام </h3>
-                                                <ul>
-                                                    <li>
-                                                        <a href="" title="عرض الأحكام حسب تاريخ جلسة الحكم">
-                                                            <i class="fa fa-calendar">&nbsp;</i> عرض الأحكام حسب تاريخ
-                                                            جلسة الحكم
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" title="عرض الأحكام حسب المواضيع">
-                                                            <i class="fa fa-th-list">&nbsp;</i> عرض الأحكام حسب المواضيع
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" title="البحث في الأحكام">البحث في الأحكام</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" title="البحث في الأحكام">عرض الاحكام كاملة</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="flex-grow-1 w-50">
-                                                <h3>فرز بالمحاكم </h3>
-                                                <ul>
-                                                    <li>
-                                                        <a>
-                                                            <i class="fa fa-gavel">&nbsp;</i> محكمة التمييز
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2413&amp;language=ar"
-                                                            title="الدائرة المدنية والتجارية">
-                                                            الدائرة المدنية والتجارية
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2414&amp;language=ar"
-                                                            title="الاحوال الشخصية والاسرة">
-                                                            الاحوال الشخصية والاسرة
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2415&amp;language=ar"
-                                                            title="الدوائر المجتمعة">
-                                                            الدوائر المجتمعة
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=4651&amp;language=ar"
-                                                            title="المواد الجنائية">
-                                                            المواد الجنائية
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-btn"></div>
-                                </li>
-                                <li id="headerctr_tdFatawa" class="dropdown">
-                                    <a href="#" title="الفتاوى">الفتاوى</a>
-                                    <ul>
-                                        <li>
-                                            <a href="OpinionByDate.aspx" title="عرض الفتاوى  حسب تاريخ الصدور">
-                                                <i class="fa fa-history">&nbsp;</i> عرض الفتاوى حسب تاريخ الصدور
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="AllOpinionSearch.aspx?type=2&amp;language=ar"
-                                                title="البحث في الفتاوى والتأديب">
-                                                البحث في الفتاوى والتأديب
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-btn"></div>
-                                </li>
-                                <li id="headerctr_tdReference">
-                                    <a href="ReferencesPage.aspx" title="المراجع">المراجع</a>
-                                </li>
-                                <li id="headerctr_tdcomone" class="dropdown">
-                                    <a href="CompaniesList.aspx?ComType=1" title="الشركات">الشركات </a>
-                                    <ul>
-                                        <li>
-                                            <a title="عرض الشركات حسب تاريخ الانشاء"
-                                                href="CompaniesList.aspx?ComType=1">
-                                                عرض الشركات حسب تاريخ الانشاء
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="عرض الشركات حسب نشاط الشركة"
-                                                href="CompaniesActivities.aspx?ComType=1">
-                                                عرض الشركات حسب نشاط الشركة
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="عرض الشركات حسب المؤسسون" href="CompaniesByOwners.aspx?ComType=1">
-                                                عرض الشركات حسب المؤسسون
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-btn"></div>
-                                </li>
-                                <li id="headerctr_tdcomtwo" class="dropdown">
-                                    <a href="CompaniesList.aspx?ComType=2" title="مؤسسات وجمعيات">مؤسسات وجمعيات </a>
-                                    <ul>
-                                        <li>
-                                            <a title="عرض المؤسسات والجمعيات حسب تاريخ الانشاء"
-                                                href="CompaniesList.aspx?ComType=2">
-                                                عرض المؤسسات والجمعيات حسب تاريخ الانشاء
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="عرض المؤسسات والجمعيات حسب النشاط"
-                                                href="CompaniesActivities.aspx?ComType=2">
-                                                عرض المؤسسات والجمعيات حسب النشاط
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="عرض المؤسسات والجمعيات حسب المؤسسون"
-                                                href="CompaniesByOwners.aspx?ComType=2">
-                                                عرض المؤسسات والجمعيات حسب المؤسسون
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-btn"></div>
-                                </li>
-                                <li id="headerctr_tdNewspaper">
-                                    <a href="OfficialJournalPage.aspx" title="الجريدة الرسمية">الجريدة الرسمية</a>
-                                </li>
-                                <li id="headerctr_legalmag">
-                                    <a href="LegalMagazine.aspx" title="المجلة القانونية">المجلة القانونية</a>
-                                </li>
-                                <li class="get-btn me-auto dropdown-toggle">
-                                    <a href="" id="headerctr_menu1" class="theme-btn appt-btn" data-bs-toggle="dropdown"
-                                        style="font-size: 14px;">
-                                        <i class="fa fa-user-plus" style="padding-left: 2px;"></i>صفحتي الشخصية
+                                <li class="dropdown-item">
+                                    <a href="">
+                                        <i class="fa fa-ban" title="التشريعات الملغاة">&nbsp;</i> التشريعات
+                                        الملغاة
                                     </a>
-                                    <ul role="menu" class="dropdown stylear" aria-labelledby="menu1">
-                                        <li id="headerctr_userEmptySeesion">
-                                            <a href="FGLoginPage.aspx">
-                                                <i class="fa fa-user" style="padding-left: 2px;"></i>تسجيل الدخول
-                                            </a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a>سجل المشاهدة</a>
-                                            <ul class="visitedar">
-                                                <li style="background-color: #900C51; color: white; font-size: 14px">
-                                                    <a id="headerctr_deletecookes" title="محو السجل"
-                                                        href="javascript:__doPostBack('ctl00$headerctr$deletecookes','')"
-                                                        style="background-color: #900C51; color: white; font-size: 14px">
-                                                        <i class="fa fa-eraser" style="padding-left: 2px;"></i>محو السجل
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li class="">
-                                            <div class="col-sm-12"></div>
-                                        </li>
-                                    </ul>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="" title="البحث في التشريعات">البحث في التشريعات</a>
+                                </li>
+
+                            </ul>
+
+                        
+                        </li>
+                        <li class="dropdown ">
+                            <a title="الاتفاقيات" class="  dropdown-toggle" href="#" role="button"
+                                id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                الاتفاقيات
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض الاتفاقيات حسب تاريخ الصدور">
+                                        <i class="fa fa-history">&nbsp;</i> عرض الاتفاقيات حسب تاريخ الصدور
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض الاتفاقيات حسب المواضيع">
+                                        <i class="fa fa-th-list">&nbsp;</i> عرض الاتفاقيات حسب المواضيع
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض الاتفاقيات حسب المنظمات">
+                                        <i class="fa fa-th">&nbsp;</i> عرض الاتفاقيات حسب المنظمات
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" title="عرض الاتفاقيات حسب الدول">
+                                        <i class="fa fa-globe">&nbsp;</i> عرض الاتفاقيات حسب الدول
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" title="البحث في الاتفاقيات">البحث في الاتفاقيات</a>
                                 </li>
                             </ul>
-                        
-                    </div>
-                </nav>
-                <!-- Main Menu End-->
-            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a title="الأحكام" class="  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <p>
+                                الأحكام
+                            </p>
+                                <i class="fas fa-bars fa-2x"></i>
+                            
+                            </a>
+                            <ul class="dropdown-menu dropdown-large" aria-labelledby="dropdownMenuLink2">
+                                <li class="d-md-flex gap-3">
+                                    <div class="flex-grow-1">
+                                        <h3>الأحكام </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="" title="عرض الأحكام حسب تاريخ جلسة الحكم">
+                                                    <i class="fa fa-calendar">&nbsp;</i> عرض الأحكام حسب تاريخ
+                                                    جلسة الحكم
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض الأحكام حسب المواضيع">
+                                                    <i class="fa fa-th-list">&nbsp;</i> عرض الأحكام حسب المواضيع
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="البحث في الأحكام">البحث في الأحكام</a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="البحث في الأحكام">عرض الاحكام كاملة</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3>فرز بالمحاكم </h3>
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="fa fa-gavel">&nbsp;</i> محكمة التمييز
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a 
+                                                    title="الدائرة المدنية والتجارية">
+                                                    الدائرة المدنية والتجارية
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  
+                                                    title="الاحوال الشخصية والاسرة">
+                                                    الاحوال الشخصية والاسرة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  
+                                                    title="الدوائر المجتمعة">
+                                                    الدوائر المجتمعة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  
+                                                    title="المواد الجنائية">
+                                                    المواد الجنائية
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  class="dropdown">
+                            <a title="الفتاوى" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>
+                                الفتاوى
+                            </p>
+                                <i
+                                class="fas fa-bars fa-2x"></i>
+                            </a>
+                                
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <a href="" title="عرض الفتاوى  حسب تاريخ الصدور">
+                                        <i class="fa fa-history">&nbsp;</i> عرض الفتاوى حسب تاريخ الصدور
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        title="البحث في الفتاوى والتأديب">
+                                        البحث في الفتاوى والتأديب
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li >
+                            <a href="" title="المراجع">المراجع</a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="الشركات" class="  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>
+                                الشركات 
+                            </p>
+                                <i
+                                class="fas fa-bars fa-2x"></i>
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <a title="عرض الشركات حسب تاريخ الانشاء" href="">
+                                        عرض الشركات حسب تاريخ الانشاء
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="عرض الشركات حسب نشاط الشركة" href="">
+                                        عرض الشركات حسب نشاط الشركة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="عرض الشركات حسب المؤسسون" href="">
+                                        عرض الشركات حسب المؤسسون
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li   class="dropdown">
+                            <a title="مؤسسات وجمعيات" class="  dropdown-toggle" href="#" role="button"
+                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <p>
+                                مؤسسات وجمعيات 
+                            </p>
+                                <i
+                                class="fas fa-bars fa-2x"></i></a>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <a title="عرض المؤسسات والجمعيات حسب تاريخ الانشاء" href="">
+                                        عرض المؤسسات والجمعيات حسب تاريخ الانشاء
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="عرض المؤسسات والجمعيات حسب النشاط" href="">
+                                        عرض المؤسسات والجمعيات حسب النشاط
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="عرض المؤسسات والجمعيات حسب المؤسسون" href="">
+                                        عرض المؤسسات والجمعيات حسب المؤسسون
+                                    </a>
+                                </li>
+                            </ul>
+                          
+                        </li>
+                        <li >
+                            <a href="" title="الجريدة الرسمية">الجريدة الرسمية</a>
+                        </li>
+                        <li >
+                            <a href="" title="المجلة القانونية">المجلة القانونية</a>
+                        </li>
+                        <li class="get-btn me-auto dropdown-toggle">
+                            <a href=""  class="theme-btn appt-btn" data-bs-toggle="dropdown"
+                                style="font-size: 14px;">
+                                <i class="fa fa-user-plus" style="padding-left: 2px;"></i>صفحتي الشخصية
+                            </a>
+                            <ul role="menu" class="dropdown stylear" aria-labelledby="menu1">
+                                <li >
+                                    <a href="">
+                                        <i class="fa fa-user" style="padding-left: 2px;"></i>تسجيل الدخول
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a>سجل المشاهدة</a>
+                                    <ul class="visitedar">
+                                        <li style="background-color: #900C51; color: white; font-size: 14px">
+                                            <a   title="محو السجل"
+                                                
+                                                style="background-color: #900C51; color: white; font-size: 14px">
+                                                <i class="fa fa-eraser" style="padding-left: 2px;"></i>محو السجل
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a title="الاتفاقيات" class="hide-btn  dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="fas fa-bars fa-2x"></i></a>
+                                </li>
+                                <li class="">
+                                    <div class="col-sm-12"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Main Menu End-->
         </div>
-    
-
-
+    </div>
     <section class="intro-style-one" style="margin-top: 20px">
         <div class="auto-container">
             <div class="row d-flex clearfix">
@@ -331,14 +364,13 @@
                                             <div class="row clearfix">
                                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                                     <label for="txtText">كلمة / جزء من عنوان التشريع</label>
-                                                    <input 
-                                                        type="text" class="form-control" onkeyup="return CheckForEnter(event);"
+                                                    <input type="text" class="form-control"
+                                                        onkeyup="return CheckForEnter(event);"
                                                         placeholder="كلمة / جزء من عنوان التشريع">
                                                 </div>
                                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <label >نوع التشريع</label>
-                                                    <select
-                                                        class="form-control">
+                                                    <label>نوع التشريع</label>
+                                                    <select class="form-control">
                                                         <option value="0">نوع التشريع</option>
                                                         <option value="2524">دستور</option>
                                                         <option value="2533">قانون</option>
@@ -362,15 +394,15 @@
                                                 </div>
                                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                                     <label for="txtNum">الرقم</label>
-                                                    <input name="ctl00$ContentPlaceHolder1$searchhome$txtNum"
-                                                        type="text" id="ContentPlaceHolder1_searchhome_txtNum"
+                                                    <input  
+                                                        type="text"  
                                                         class="form-control" onkeyup="return CheckForEnter(event);"
                                                         onkeydown="return IsNumberKey(event);" placeholder="الرقم">
                                                 </div>
                                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                                     <label for="txtYear">السنة</label>
-                                                    <select name="ctl00$ContentPlaceHolder1$searchhome$txtYear"
-                                                        id="ContentPlaceHolder1_searchhome_txtYear"
+                                                    <select 
+                                                       
                                                         class="form-control">
                                                         <option value="">السنة</option>
                                                         <option value="2025">2025</option>
@@ -466,20 +498,18 @@
                                             <form>
                                                 <div class="row clearfix">
                                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                        <input 
-                                                            type="text"
-                                                            class="form-control" placeholder="كلمة / جزء من العنوان">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="كلمة / جزء من العنوان">
                                                     </div>
 
                                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                        <input 
-                                                            type="text"
-                                                            class="form-control" placeholder="اختر"
-                                                        class="d-flex align-end justify-content-end form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
+                                                        <input type="text" class="form-control" placeholder="اختر"
+                                                            class="d-flex align-end justify-content-end form-group padd-top-10 col-md-12 col-sm-12 col-xs-12 text-right flip">
                                                     </div>
                                                     <div class="d-flex justify-content-end">
-                                                        <input class="theme-btn  btn-style-four m-top-10 " type="button" style="margin-right: auto;"
-                                                                value="بحث" onclick="GoToPage();">
+                                                        <input class="theme-btn  btn-style-four m-top-10 " type="button"
+                                                            style="margin-right: auto;" value="بحث"
+                                                            onclick="GoToPage();">
 
                                                     </div>
                                                 </div>
@@ -569,264 +599,270 @@
             </div>
 
             <div class="header-lower">
-                    <div class="nav-outer clearfix">
-                        <nav class="main-menu">
-                            <div class="navbar-header">
-                                <button class="navbar-toggler bg-grey d-none" type="button" data-bs-toggle="collapse"
-                                    data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <i class="fas fa-bars fa-2x"></i>
-                                </button>
-                            </div>
-        
-                            <div class="navbar-collapse show collapse">
-                                <div class="navbar-collapse collapse d-flex justify-content-between">
-                                    <ul class="navigation clearfix d-flex flex-wrap w-100">
-                                        <li class="current">
-                                            <a href="" style="font-size: 23px" title="الصفحة الرئيسية">
-                                                <i class="fa fa-home"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" title="بحث">
-                                                <i class="fa fa-search"></i>
-                                            </a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="" title="التشريعات" class="dropdown-toggle"
-                                                data-bs-toggle="dropdown">التشريعات</a>
-                                            <ul class="dropdown">
-                                                <li>
-                                                    <a href="" title="عرض التشريعات حسب تاريخ الاصدار">
-                                                        <i class="fa fa-history">&nbsp;</i> عرض التشريعات حسب تاريخ الاصدار
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="عرض التشريعات حسب المواضيع ">
-                                                        <i class="fa fa-th-list">&nbsp;</i> عرض التشريعات حسب المواضيع
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="عرض التشريعات حسب الجهات المعنية">
-                                                        <i class="fa fa-arrows">&nbsp;</i> عرض التشريعات حسب الجهات المعنية
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <i class="fa fa-ban" title="التشريعات الملغاة">&nbsp;</i> التشريعات
-                                                        الملغاة
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="البحث في التشريعات">البحث في التشريعات</a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="" title="الاتفاقيات">الاتفاقيات</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="" title="عرض الاتفاقيات حسب تاريخ الصدور">
-                                                        <i class="fa fa-history">&nbsp;</i> عرض الاتفاقيات حسب تاريخ الصدور
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="عرض الاتفاقيات حسب المواضيع">
-                                                        <i class="fa fa-th-list">&nbsp;</i> عرض الاتفاقيات حسب المواضيع
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="عرض الاتفاقيات حسب المنظمات">
-                                                        <i class="fa fa-th">&nbsp;</i> عرض الاتفاقيات حسب المنظمات
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="عرض الاتفاقيات حسب الدول">
-                                                        <i class="fa fa-globe">&nbsp;</i> عرض الاتفاقيات حسب الدول
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" title="البحث في الاتفاقيات">البحث في الاتفاقيات</a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" title="الأحكام">الأحكام</a>
-                                            <ul role="menu" class="dropdown-large row">
-                                                <li class="d-flex gap-3">
-                                                    <div class="flex-grow-1 w-50">
-                                                        <h3>الأحكام </h3>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="" title="عرض الأحكام حسب تاريخ جلسة الحكم">
-                                                                    <i class="fa fa-calendar">&nbsp;</i> عرض الأحكام حسب تاريخ
-                                                                    جلسة الحكم
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="" title="عرض الأحكام حسب المواضيع">
-                                                                    <i class="fa fa-th-list">&nbsp;</i> عرض الأحكام حسب المواضيع
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="" title="البحث في الأحكام">البحث في الأحكام</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="" title="البحث في الأحكام">عرض الاحكام كاملة</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="flex-grow-1 w-50">
-                                                        <h3>فرز بالمحاكم </h3>
-                                                        <ul>
-                                                            <li>
-                                                                <a>
-                                                                    <i class="fa fa-gavel">&nbsp;</i> محكمة التمييز
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2413&amp;language=ar"
-                                                                    title="الدائرة المدنية والتجارية">
-                                                                    الدائرة المدنية والتجارية
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2414&amp;language=ar"
-                                                                    title="الاحوال الشخصية والاسرة">
-                                                                    الاحوال الشخصية والاسرة
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=2415&amp;language=ar"
-                                                                    title="الدوائر المجتمعة">
-                                                                    الدوائر المجتمعة
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="RulingsByDate.aspx?type=SUBJECTS&amp;entry=4651&amp;language=ar"
-                                                                    title="المواد الجنائية">
-                                                                    المواد الجنائية
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li id="headerctr_tdFatawa" class="dropdown">
-                                            <a href="#" title="الفتاوى">الفتاوى</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="OpinionByDate.aspx" title="عرض الفتاوى  حسب تاريخ الصدور">
-                                                        <i class="fa fa-history">&nbsp;</i> عرض الفتاوى حسب تاريخ الصدور
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="AllOpinionSearch.aspx?type=2&amp;language=ar"
-                                                        title="البحث في الفتاوى والتأديب">
-                                                        البحث في الفتاوى والتأديب
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li id="headerctr_tdReference">
-                                            <a href="ReferencesPage.aspx" title="المراجع">المراجع</a>
-                                        </li>
-                                        <li id="headerctr_tdcomone" class="dropdown">
-                                            <a href="CompaniesList.aspx?ComType=1" title="الشركات">الشركات </a>
-                                            <ul>
-                                                <li>
-                                                    <a title="عرض الشركات حسب تاريخ الانشاء"
-                                                        href="CompaniesList.aspx?ComType=1">
-                                                        عرض الشركات حسب تاريخ الانشاء
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="عرض الشركات حسب نشاط الشركة"
-                                                        href="CompaniesActivities.aspx?ComType=1">
-                                                        عرض الشركات حسب نشاط الشركة
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="عرض الشركات حسب المؤسسون" href="CompaniesByOwners.aspx?ComType=1">
-                                                        عرض الشركات حسب المؤسسون
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li id="headerctr_tdcomtwo" class="dropdown">
-                                            <a href="CompaniesList.aspx?ComType=2" title="مؤسسات وجمعيات">مؤسسات وجمعيات </a>
-                                            <ul>
-                                                <li>
-                                                    <a title="عرض المؤسسات والجمعيات حسب تاريخ الانشاء"
-                                                        href="CompaniesList.aspx?ComType=2">
-                                                        عرض المؤسسات والجمعيات حسب تاريخ الانشاء
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="عرض المؤسسات والجمعيات حسب النشاط"
-                                                        href="CompaniesActivities.aspx?ComType=2">
-                                                        عرض المؤسسات والجمعيات حسب النشاط
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="عرض المؤسسات والجمعيات حسب المؤسسون"
-                                                        href="CompaniesByOwners.aspx?ComType=2">
-                                                        عرض المؤسسات والجمعيات حسب المؤسسون
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="dropdown-btn"></div>
-                                        </li>
-                                        <li id="headerctr_tdNewspaper">
-                                            <a href="OfficialJournalPage.aspx" title="الجريدة الرسمية">الجريدة الرسمية</a>
-                                        </li>
-                                        <li id="headerctr_legalmag">
-                                            <a href="LegalMagazine.aspx" title="المجلة القانونية">المجلة القانونية</a>
-                                        </li>
-                                        <li class="get-btn  dropdown-toggle">
-                                            <a href="" id="headerctr_menu1" class="theme-btn appt-btn" data-bs-toggle="dropdown"
-                                                style="font-size: 14px;">
-                                                <i class="fa fa-user-plus" style="padding-left: 2px;"></i>صفحتي الشخصية
-                                            </a>
-                                            <ul role="menu" class="dropdown stylear" aria-labelledby="menu1">
-                                                <li id="headerctr_userEmptySeesion">
-                                                    <a href="FGLoginPage.aspx">
-                                                        <i class="fa fa-user" style="padding-left: 2px;"></i>تسجيل الدخول
-                                                    </a>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a>سجل المشاهدة</a>
-                                                    <ul class="visitedar">
-                                                        <li style="background-color: #900C51; color: white; font-size: 14px">
-                                                            <a id="headerctr_deletecookes" title="محو السجل"
-                                                                href="javascript:__doPostBack('ctl00$headerctr$deletecookes','')"
-                                                                style="background-color: #900C51; color: white; font-size: 14px">
-                                                                <i class="fa fa-eraser" style="padding-left: 2px;"></i>محو السجل
+                <div class="nav-outer clearfix">
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <button class="navbar-toggler bg-grey d-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars fa-2x"></i>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse show collapse">
+                            <div class="navbar-collapse collapse d-flex justify-content-between">
+                                <ul class="navigation clearfix d-flex flex-wrap w-100 align-items-center">
+                                    <li class="current">
+                                        <a href="" style="font-size: 23px" title="الصفحة الرئيسية">
+                                            <i class="fa fa-home"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="بحث">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" title="التشريعات" class="dropdown-toggle"
+                                            data-bs-toggle="dropdown">التشريعات</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="" title="عرض التشريعات حسب تاريخ الاصدار">
+                                                    <i class="fa fa-history">&nbsp;</i> عرض التشريعات حسب تاريخ الاصدار
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض التشريعات حسب المواضيع ">
+                                                    <i class="fa fa-th-list">&nbsp;</i> عرض التشريعات حسب المواضيع
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض التشريعات حسب الجهات المعنية">
+                                                    <i class="fa fa-arrows">&nbsp;</i> عرض التشريعات حسب الجهات المعنية
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa fa-ban" title="التشريعات الملغاة">&nbsp;</i> التشريعات
+                                                    الملغاة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="البحث في التشريعات">البحث في التشريعات</a>
+                                            </li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" title="الاتفاقيات">الاتفاقيات</a>
+                                        <ul>
+                                            <li>
+                                                <a href="" title="عرض الاتفاقيات حسب تاريخ الصدور">
+                                                    <i class="fa fa-history">&nbsp;</i> عرض الاتفاقيات حسب تاريخ الصدور
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض الاتفاقيات حسب المواضيع">
+                                                    <i class="fa fa-th-list">&nbsp;</i> عرض الاتفاقيات حسب المواضيع
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض الاتفاقيات حسب المنظمات">
+                                                    <i class="fa fa-th">&nbsp;</i> عرض الاتفاقيات حسب المنظمات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="عرض الاتفاقيات حسب الدول">
+                                                    <i class="fa fa-globe">&nbsp;</i> عرض الاتفاقيات حسب الدول
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="البحث في الاتفاقيات">البحث في الاتفاقيات</a>
+                                            </li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" title="الأحكام">الأحكام</a>
+                                        <ul role="menu" class=" row">
+                                            <li class="d-flex gap-3">
+                                                <div class="flex-grow-1 w-50">
+                                                    <h3>الأحكام </h3>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="" title="عرض الأحكام حسب تاريخ جلسة الحكم">
+                                                                <i class="fa fa-calendar">&nbsp;</i> عرض الأحكام حسب
+                                                                تاريخ
+                                                                جلسة الحكم
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" title="عرض الأحكام حسب المواضيع">
+                                                                <i class="fa fa-th-list">&nbsp;</i> عرض الأحكام حسب
+                                                                المواضيع
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" title="البحث في الأحكام">البحث في الأحكام</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" title="البحث في الأحكام">عرض الاحكام كاملة</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="flex-grow-1 w-50">
+                                                    <h3>فرز بالمحاكم </h3>
+                                                    <ul>
+                                                        <li>
+                                                            <a>
+                                                                <i class="fa fa-gavel">&nbsp;</i> محكمة التمييز
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="?type=SUBJECTS&amp
+                                                                title="الدائرة المدنية والتجارية">
+                                                                الدائرة المدنية والتجارية
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="?type=SUBJECTS&amp
+                                                                title="الاحوال الشخصية والاسرة">
+                                                                الاحوال الشخصية والاسرة
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="?type=SUBJECTS&amp
+                                                                title="الدوائر المجتمعة">
+                                                                الدوائر المجتمعة
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="?type=SUBJECTS&amp
+                                                                title="المواد الجنائية">
+                                                                المواد الجنائية
                                                             </a>
                                                         </li>
                                                     </ul>
-                                                    <div class="dropdown-btn"></div>
-                                                </li>
-                                                <li class="">
-                                                    <div class="col-sm-12"></div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="#" title="الفتاوى">الفتاوى</a>
+                                        <ul>
+                                            <li>
+                                                <a href="" title="عرض الفتاوى  حسب تاريخ الصدور">
+                                                    <i class="fa fa-history">&nbsp;</i> عرض الفتاوى حسب تاريخ الصدور
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=""
+                                                    title="البحث في الفتاوى والتأديب">
+                                                    البحث في الفتاوى والتأديب
+                                                </a>
+                                            </li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li >
+                                        <a href="" title="المراجع">المراجع</a>
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="" title="الشركات">الشركات </a>
+                                        <ul>
+                                            <li>
+                                                <a title="عرض الشركات حسب تاريخ الانشاء"
+                                                    href="">
+                                                    عرض الشركات حسب تاريخ الانشاء
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="عرض الشركات حسب نشاط الشركة"
+                                                    href="">
+                                                    عرض الشركات حسب نشاط الشركة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="عرض الشركات حسب المؤسسون"
+                                                    href="">
+                                                    عرض الشركات حسب المؤسسون
+                                                </a>
+                                            </li>
+                                        </ul>
+                                     
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="" title="مؤسسات وجمعيات">مؤسسات وجمعيات
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a title="عرض المؤسسات والجمعيات حسب تاريخ الانشاء"
+                                                    href="">
+                                                    عرض المؤسسات والجمعيات حسب تاريخ الانشاء
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="عرض المؤسسات والجمعيات حسب النشاط"
+                                                    href="">
+                                                    عرض المؤسسات والجمعيات حسب النشاط
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="عرض المؤسسات والجمعيات حسب المؤسسون"
+                                                    href="">
+                                                    عرض المؤسسات والجمعيات حسب المؤسسون
+                                                </a>
+                                            </li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li >
+                                        <a href="" title="الجريدة الرسمية">الجريدة الرسمية</a>
+                                    </li>
+                                    <li >
+                                        <a href="" title="المجلة القانونية">المجلة القانونية</a>
+                                    </li>
+                                    <li class="get-btn  dropdown-toggle">
+                                        <a href=""  class="theme-btn appt-btn"
+                                            data-bs-toggle="dropdown" style="font-size: 14px;">
+                                            <i class="fa fa-user-plus" style="padding-left: 2px;"></i>صفحتي الشخصية
+                                        </a>
+                                        <ul role="menu" class="dropdown stylear" aria-labelledby="menu1">
+                                            <li  >
+                                                <a  >
+                                                    <i class="fa fa-user" style="padding-left: 2px;"></i>تسجيل الدخول
+                                                </a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a>سجل المشاهدة</a>
+                                                <ul class="visitedar">
+                                                    <li
+                                                        style="background-color: #900C51; color: white; font-size: 14px">
+                                                        <a   title="محو السجل"
+                                                            
+                                                            style="background-color: #900C51; color: white; font-size: 14px">
+                                                            <i class="fa fa-eraser" style="padding-left: 2px;"></i>محو
+                                                            السجل
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </li>
+                                            <li class="">
+                                                <div class="col-sm-12"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                        </nav>
-                        
-                    </div>
+                        </div>
+                    </nav>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

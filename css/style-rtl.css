@@ -5,6 +5,10 @@ body {
 	text-align:right;
 }
 
+
+.dropdown-menu{
+	text-align: start !important;
+}
 .main-menu .navigation > li {
 	float: right;
 }
@@ -30,10 +34,7 @@ body {
 .main-menu .navigation li > ul > li.dropdown:hover > ul {
 	right: 100%;
 }
-.main-menu .navbar-collapse > ul li.dropdown .dropdown-btn {
-	left: 10px;
-	right: auto;
-}
+ 
 
 .main-menu .navigation > li.get-btn> ul {
 	left: 8px;

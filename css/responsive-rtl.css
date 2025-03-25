@@ -13,10 +13,32 @@
     
     }
     @media only screen and (max-width:767px) {
+
+        p{
+            margin:0 ;
+        }
+
+        .dropdown-menu {
+            position: relative !important;  /* Fixed to cover screen */
+             transform: none !important;
+            
+        }
+
+        
+
         .max-h-300{
             max-height: 300px!important;
-            overflow-y: scroll;
         }
+
+
+
+
+/* 
+.navigation>li>ul>li:hover>a,
+.navigation ul ul li:hover a {
+    background: #616161;
+    color: #fff;
+} */
     .nav-outer {
         padding-left: 0px;
     }
